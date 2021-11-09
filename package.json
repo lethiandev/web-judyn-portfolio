@@ -1,0 +1,16 @@
+{
+  "name": "@judyngraff/web",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "serve": "node ./serve.js"
+  },
+  "author": "Konrad Nowakowksi <konrad.x92@gmail.com>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "connect": "^3.7.0",
+    "livereload": "^0.9.3",
+    "parseurl": "^1.3.3",
+    "serve-static": "^1.14.1"
+  }
+}
