@@ -25,7 +25,7 @@ function updateActiveLink() {
 function findActiveContainer() {
   for (const container of containers) {
     const rect = container.getBoundingClientRect()
-    const yMiddle = rect.bottom - window.innerHeight / 2
+    const yMiddle = rect.bottom - window.innerHeight / 3
     if (yMiddle > 0) {
       return container
     }
