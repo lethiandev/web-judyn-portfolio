@@ -46,6 +46,18 @@ html {
   letter-spacing: 4px;
 }
 
+a,
+a:link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+}
+
+a:active,
+a:hover {
+  color: var(--color-secondary);
+}
+
 /*
  * Titles
  */
@@ -70,6 +82,10 @@ html {
   width: 48px;
 }
 
+.section-footer .title {
+  color: #fff;
+}
+
 /*
  * Lists
  */
@@ -87,6 +103,10 @@ html {
   color: var(--color-primary);
   display: inline-block;
   width: 1em;
+}
+
+.section-footer .list li::before {
+  color: var(--color-secondary);
 }
 
 /*
@@ -356,6 +376,46 @@ hr {
 .social-links a:hover,
 .social-links a:active {
   fill: var(--color-secondary);
+}
+
+/**
+ * Contact links
+ */
+.contact-links {
+  margin: 1.5rem 0 2.5rem 0;
+}
+
+.contact-link {
+  margin: 8px 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.contact-link a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.contact-link a svg {
+  margin-right: 0.75rem;
+  fill: #fff;
+}
+
+.contact-link a:hover svg,
+.contact-link a:active svg {
+  fill: var(--color-secondary);
+}
+
+.contact-link .social-links {
+  margin-right: 0.75rem;
+  justify-content: flex-start;
+}
+
+.contact-link .social-links abbr,
+.contact-link .social-links svg {
+  margin: 0;
 }
 
 /**
