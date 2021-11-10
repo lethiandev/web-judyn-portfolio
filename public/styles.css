@@ -47,6 +47,49 @@ html {
 }
 
 /*
+ * Titles
+ */
+.title {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-primary);
+}
+
+.title:first-child {
+  margin-top: 0;
+}
+
+.title-bar::after {
+  content: '';
+  margin-top: 6px;
+  display: block;
+  border-top: solid 6px var(--color-secondary);
+  width: 48px;
+}
+
+/*
+ * Lists
+ */
+.list {
+  margin: 0;
+  padding: 0 0 0 1.5em;
+  list-style: none;
+}
+
+.list li::before {
+  content: '\2022';
+  margin-left: -1em;
+  font-weight: bold;
+  font-size: 1em;
+  color: var(--color-primary);
+  display: inline-block;
+  width: 1em;
+}
+
+/*
  * Page Sections
  */
 
@@ -313,4 +356,19 @@ hr {
 .social-links a:hover,
 .social-links a:active {
   fill: var(--color-secondary);
+}
+
+/**
+ * Content formatting
+ */
+.content {
+  margin-bottom: 1rem;
+}
+
+.content-format p {
+  margin-bottom: 0;
+}
+
+.content-format:first-child p {
+  margin-top: 0;
 }
