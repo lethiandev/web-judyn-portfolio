@@ -44,6 +44,20 @@ function activateLink(id) {
   })
 }
 
+// Apply parallax effect
+const bg = Array.from(document.getElementsByClassName('section-header'))
+window.addEventListener('scroll', updateParallaxes)
+updateParallaxes()
+
+function updateParallaxes() {
+  bg.forEach(updateParallaxEffect)
+}
+
+function updateParallaxEffect(el) {
+  const yOffset = window.scrollY * -0.333
+  el.style.backgroundPositionY = yOffset + 'px'
+}
+
 // Force the browser to re-render when the user scrolls down
 // Fixes issue with the navbar not being visible when the user scrolls down
 window.addEventListener('scroll', function () {

@@ -142,6 +142,7 @@ a:hover {
 
 .section-header {
   background-image: url(images/background.jpg);
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: white;
