@@ -171,7 +171,7 @@ a:hover {
 
 .container {
   margin: 0 auto;
-  padding: 64px 48px;
+  padding: 64px 24px;
   max-width: 100%;
   width: 1200px;
   box-sizing: border-box;
