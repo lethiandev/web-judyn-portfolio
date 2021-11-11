@@ -141,7 +141,7 @@ a:hover {
 }
 
 .section-header {
-  background-image: url(images/background.jpg);
+  background: url(images/background.jpg) no-repeat #0d0d0d;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
