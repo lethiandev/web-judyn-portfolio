@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "serve": "node ./serve.js",
-    "deploy": "gh-pages -d public"
+    "deploy": "gh-pages -d public -t"
   },
   "author": "Konrad Nowakowksi <konrad.x92@gmail.com>",
   "license": "UNLICENSED",
